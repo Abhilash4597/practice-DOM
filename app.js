@@ -3,6 +3,7 @@ const minus = document.querySelector('.minus');
 const count = document.querySelector('.count');
 let counting = 0;
 
+//# simple counter
 // function increase() {
 //   counting++;
 //   count.textContent = counting;
@@ -22,16 +23,17 @@ let counting = 0;
 
 // minus.addEventListener('click', decrease);
 
+// # counter of condition and single btn
 function countingAndDisplaying() {
-
+  
   if (minus.textContent == 'increase') {
-    counting++;
-    count.textContent = counting;
+    // counting++;
+    count.textContent ++;
   } else {
-    counting--;
-    count.textContent = counting;
+    // counting--;
+    count.textContent --;
   }
-
+  
   if (count.textContent == 10) {
     minus.textContent = 'decrease'
   } else if (count.textContent == 0) {
